@@ -7,11 +7,11 @@
 <h1 align="center">🚀  Cookiecutter Docker</h1><h2 align="center">SimplySmart-IT - Open Source</h2>
 
 <p align="center">
-  <a href="#sparkles-about">About</a> &#xa0; | &#xa0; 
+  <a href="#bookmark_tabs-about">About</a> &#xa0; | &#xa0; 
   <a href="#white_check_mark-technologies">Technologies</a> &#xa0; | &#xa0;
-  <a href="#rocket-starting">Let's start</a> &#xa0; | &#xa0;
+  <a href="#rocket-lets-start">Let's start</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="#tada-your-support">Author</a>
+  <a href="#sparkles-your-support">Author</a>
 </p>
 
 &#xa0;
@@ -22,14 +22,13 @@
 
 This repository and the associated Docker image are designed to help developers get started quickly and work with cookiecutters.
 
-Thank you, Audrey Roy Greenfeld, for the great idea, implementation and maintenance of this very useful command-line utility and to make it available to the open source community. [Cookiecutter - Code](https://github.com/cookiecutter/cookiecutter)
+Thank you, [Audrey Roy Greenfeld](https://github.com/audreyfeldroy), for the great idea, implementation and maintenance of this very useful command-line utility and to make it available to the open source community.
+## :white_check_mark: Technologies ##
 
-## ✅ Technologies ##
-
-- [Cookiecutter](https://www.cookiecutter.io/) - an open source library for building coding project templates.
+- [Cookiecutter](https://github.com/cookiecutter/cookiecutter) - an open source library for building coding project templates.
 - [Docker](https://www.docker.com/)
 
-## 🚀 Let's start ##
+## :rocket: Let's start ##
 
 Pull the docker image
 
@@ -98,7 +97,7 @@ docker run -it --rm \
 This project is under GNU General Public License version 3 or later;. For more details, see the [LICENSE](LICENSE.md) file.
 
 
-## :tada: Your support ##
+## :sparkles: Your support ##
 
 Made with :heart: by <a href="https://github.com/SimplySmart-IT" target="_blank">Martina Scholz</a>
 
@@ -109,4 +108,4 @@ Would you like to support me and my future developments?!? 🎉 🚀 Thank you !
 &#xa0;
 
 
-<div style="text-align: center"><a href="#top">Back to top&nbsp;&nbsp;🔝</a></div>
+<a href="#top">Back to top&nbsp;&nbsp;⬆️</a>
