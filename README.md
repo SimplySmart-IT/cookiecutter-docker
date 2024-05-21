@@ -82,14 +82,14 @@ It is also possible to combine the variables `DIRECTORY`and `CHECKOUT` to get a 
 ## Local repository or folder
 
 You can also use a local folder or a previously cloned local repository. 
-- MOUNT your local directory with the Cookiecutter template `-v YOUR-LOCAL-FOLDER-PATH:/cookie_cookie_in`
+- MOUNT your local directory with the Cookiecutter template `-v YOUR-LOCAL-FOLDER-PATH:/cookie_in`
 - FILL the `TEMPLATE` variable with the directory in your docker container that is mounted to the folder outside `TEMPLATE=/cookie_in`
 ```
 docker run -it --rm \
 	-e TEMPLATE=/cookie_in \
 	-e OUT_DIR=/cookie_out \
 	-v $PWD:/cookie_out \
-	-v YOUR-LOCAL-FOLDER-PATH:/cookie_cookie_in \
+	-v YOUR-LOCAL-FOLDER-PATH:/cookie_in \
 	ghcr.io/simplysmart-it/cookiecutter-docker:alpine-13.9.1
 ```
 
