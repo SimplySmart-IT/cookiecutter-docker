@@ -22,11 +22,23 @@
 
 This repository and the associated Docker image are designed to help developers get started quickly and work with cookiecutters.
 
+## Joomla! Templates for Cookiecutter[^1]
+🚀 Cookiecutter Templates for Joomla! [cookiecutter-joomla](https://github.com/SimplySmart-IT/cookiecutter-joomla)  🚧  Under construction... 🚧 
+## Discover Templates for Cookiecutter
+Discover a variety of ready-to-use templates on [GitHub](https://github.com/search?q=cookiecutter&type=Repositories).
+## PHP Templates for Cookiecutter
+Filterd list for PHP templates on [GitHub](https://github.com/search?q=cookiecutter+language%3APHP+&type=repositories&s=updated&o=desc)
+
 Thank you, [Audrey Roy Greenfeld](https://github.com/audreyfeldroy), for the great idea, implementation and maintenance of this very useful command-line utility and to make it available to the open source community.
+
+&#xa0;
+
 ## :white_check_mark: Technologies ##
 
 - [Cookiecutter](https://github.com/cookiecutter/cookiecutter) - an open source library for building coding project templates.
 - [Docker](https://www.docker.com/)
+
+&#xa0;
 
 ## :rocket: Let's start ##
 
@@ -51,6 +63,8 @@ This command runs Cookiecutter in your container and generates a new project in 
 
 Cookiecutter knows abbreviations for Github (gh), Bitbucket (bb), and GitLab (gl) projects, but you can also give it the full URL to any repository. [Read more about this topic directly in the Cookiecutter documentation.](https://cookiecutter.readthedocs.io/en/stable/usage.html).
 
+&#xa0;
+
 ## Checkout branch
 
 You can also check out a specific branch by adding and filling the variable `CHECKOUT` with the branch name.
@@ -63,6 +77,7 @@ docker run -it --rm \
 	-v $PWD:/cookie_out \
 	ghcr.io/simplysmart-it/cookiecutter-docker:alpine-13.9.1
 ```
+&#xa0;
 
 ## Directory structured cookiecutter
 
@@ -78,6 +93,8 @@ docker run -it --rm \
 ```
 It is also possible to combine the variables `DIRECTORY`and `CHECKOUT` to get a subfolder from a specific branch.
 
+&#xa0;
+
 ## Local repository or folder
 
 You can also use a local folder or a previously cloned local repository. 
@@ -91,11 +108,13 @@ docker run -it --rm \
 	-v YOUR-LOCAL-FOLDER-PATH:/cookie_in \
 	ghcr.io/simplysmart-it/cookiecutter-docker:alpine-13.9.1
 ```
+&#xa0;
 
 ## :memo: License ##
 
 This project is under GNU General Public License version 3 or later;. For more details, see the [LICENSE](LICENSE.md) file.
 
+&#xa0;
 
 ## :sparkles: Your support ##
 
@@ -107,5 +126,6 @@ Would you like to support me and my future developments?!? 🎉 🚀 Thank you !
 
 &#xa0;
 
-
 <a href="#top">Back to top&nbsp;&nbsp;⬆️</a>
+
+[^1]: This project is not affiliated with or endorsed by The Joomla! Project™. Any products and services provided through this site are not supported or warrantied by The Joomla! Project or Open Source Matters, Inc. Use of the Joomla!® name, symbol, logo and related trademarks is permitted under a limited license granted by Open Source Matters, Inc.
