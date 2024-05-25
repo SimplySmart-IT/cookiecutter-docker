@@ -110,6 +110,34 @@ docker run -it --rm \
 ```
 &#xa0;
 
+## Global Settings - User Config
+
+If you use Cookiecutter a lot, it can be handy to set up a global configuration. This way, you can define the repeating params once and then use them wherever you need to without having to enter them again.
+
+- Example user config e.g. `~/cookiecutter-global.yaml`
+
+```
+default_context:
+    author: "Your Full Name"
+    author_email: "support@example.local"
+    author_company: "Example Company"
+    author_url: "https://www.example.local"
+    namespace: "YourNamespace"
+```
+
+- MOUNT your local user config e.g. `~/.cookiecutterrc` or any other yaml config file into the Cookiecutter container `-v YOUR-LOCAL-FOLDER-PATH/cookiecutter-global.yaml:/cookie_config/.cookiecutterrc`
+
+```
+docker run -it --rm \
+	-e TEMPLATE=gh:simplysmart-it/cookiecutter-joomla \
+	-e OUT_DIR=/cookie_out \
+	-e CHECKOUT=main \
+	-v $PWD:/cookie_out \
+	-v YOUR-LOCAL-FOLDER-PATH/cookiecutter-global.yaml:/cookie_config/.cookiecutterrc \
+	ghcr.io/simplysmart-it/cookiecutter-docker:alpine-13.9.1
+```
+&#xa0;
+
 ## :memo: License ##
 
 This project is under GNU General Public License version 3 or later;. For more details, see the [LICENSE](LICENSE.md) file.
@@ -122,7 +150,7 @@ Made with :heart: by <a href="https://github.com/SimplySmart-IT" target="_blank"
 
 Would you like to support me and my future developments?!? 🎉 🚀 Thank you !!! ❤️
 
-[<img alt="paypal.me/simplysmartit" src="https://img.shields.io/static/v1?label=PayPal.me/SimplySmartIT&message=PayPal.me&color=1040c1&style=for-the-badge&logo=paypal"/>](https://paypal.me/simplysmartit?country.x=DE&locale.x=de_DE)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M3YITWC)
 
 &#xa0;
 
