@@ -15,6 +15,10 @@ if [ ! -z ${CHECKOUT:-} ]; then
     params="${params:-} $CHECKOUT"
 fi
 
+if [ -f /cookie_config/.cookiecutterrc ]; then
+    params="${params:-} --config-file /cookie_config/.cookiecutterrc"
+fi
+
 if [ -f $OUT_DIR/cookiecutter-replay.json ]; then
     params="${params:-} --replay-file $OUT_DIR/cookiecutter-replay.json -f"
 fi
